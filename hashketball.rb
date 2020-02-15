@@ -119,13 +119,12 @@ def find_player(player_name)
   home_players = game_hash[:home][:players]
   away_players = game_hash[:away][:players]
   
-  all_players = home_players.merge(away_players) #combines hash
+  all_players = home_players.merge(away_players) 
   
   all_players[player_name]
 
 def num_points_scored(player_name)
-  def num_points_scored(player_name)
-find_player(player_name)[:points]
+  find_player(player_name)[:points]
 end
 
 #   game_hash.each do |location, team_data|
