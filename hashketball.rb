@@ -1,4 +1,4 @@
-def game_hash
+def game_hash(hash)
   hash = {}
   hash{[:home, :away]}
   hash{[:team_name, :colors, :players]} 
