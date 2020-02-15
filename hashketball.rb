@@ -124,6 +124,9 @@ def find_player(player_name)
   all_players[player_name]
 
 def num_points_scored(player_name)
+  def num_points_scored(player_name)
+find_player(player_name)[:points]
+end
 
 #   game_hash.each do |location, team_data|
 #     team_data.each do |attribute, data|
