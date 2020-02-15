@@ -124,7 +124,7 @@ def find_player(player_name)
   all_players[player_name]
 end
 
-def num_points_scored(player_name)
+def num_points_scored
   find_player(player_name)[:points]
 end
 
