@@ -115,20 +115,29 @@ require 'pry'
 }
 end
 
+def find_player(player_name)
+  home_players = game_hash[:home][:players]
+  away_players = game_hash[:away][:players]
+  
+  all_players = home_players.merge(away_players) #combines hash
+  
+  all_players[player_name]
+
 def num_points_scored(player_name)
-  game_hash.each do |location, team_data|
-    team_data.each do |attribute, data|
-      if attribute == :players
-      data.each do |player|
-        binding.pry 
-        if player[:player_name] == player_name
-          return player[:points]
-        end
-      end 
-    end
-  end
- end 
-end
+
+#   game_hash.each do |location, team_data|
+#     team_data.each do |attribute, data|
+#       if attribute == :players
+#       data.each do |player|
+#         binding.pry 
+#         if player[:player_name] == player_name
+#           return player[:points]
+#         end
+#       end 
+#     end
+#   end
+# end 
+# end
   
 
 
