@@ -156,6 +156,7 @@ def team_names
 end 
 
 def player_numbers(team_name)
+  new_array = []
  end 
 
 
