@@ -184,11 +184,13 @@ def player_stats(player_name)
                            blocks: player_stat[:blocks],
                            slam_dunks: player_stat[:slam_dunks]
                          }
-                         
-      end 
-    end 
-  end 
-end
+                         end
+                       end
+                     end
+                   end
+                   new_hash
+                 end 
+  
   
   
   
