@@ -117,6 +117,7 @@ end
 
 def num_points_scored(player_name)
   players = get_all_players(game_hash)
+  binding.pry
   find_player(players, player_name)[:points]
 end 
 
@@ -127,7 +128,6 @@ def get_all_players(game_hash)
 end 
   
 def find_player(players, player_name)
-  binding.pry 
   players.each do |player|
     if player[:player_name] == player_name
         return player 
