@@ -160,7 +160,7 @@ def player_numbers(team_name)
   game_hash.each do |location, team|
     team.each do |team_data, value|
       if team_data == :players
-        
+        binding.pry 
         value.each do |player_data|
           new_array << player_data[:number]
         end
