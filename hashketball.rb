@@ -137,7 +137,7 @@ end
 def shoe_size(player_name)
   binding.pry 
    players = get_all_players(game_hash)
-  find_player(players, player_name)[:shoe_size]
+  find_player(players, player_name)[:shoe]
 end   
   
 def team_colors(team_name)
