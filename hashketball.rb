@@ -161,6 +161,7 @@ def player_numbers(team_name)
     team.each do |team_data, value|
       if team_data == :players
         value.each do |player_data|
+          player_data[:number]
           binding.pry 
         end
       end
