@@ -218,6 +218,21 @@ def most_points_scored
   return most_points_player
 end
 
+def winning_team
+  max_points = 0
+  winning_team = ""
+  game_hash.each do |location, team_data|
+    team_total = 0
 
+    team_data[:players].each do |player_stats|
+      team_total += player_stats[:points]
+    end
+    if team_total > max_points
+      max_points = team_total
+      winning_team = team_data[:team_name]
+    end 
+  end 
+  return winning_team
+end
 
   
