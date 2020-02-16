@@ -114,7 +114,7 @@ def game_hash
 end
 
 def num_points_scored(player_name)
-  players = get_all_players
+  players = get_all_players(game_hash)
   find_player(players, player_name)[:points]
 end 
 
