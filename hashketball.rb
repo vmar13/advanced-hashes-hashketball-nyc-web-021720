@@ -157,8 +157,10 @@ end
 
 def player_numbers(team_name)
   new_array = []
-  game_hash.each do |
- end 
+  game_hash.each do |location, team|
+      binding.pry
+end
+end 
  
  
 
