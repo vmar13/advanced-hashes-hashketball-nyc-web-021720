@@ -157,6 +157,7 @@ end
 
 def player_numbers(team_name)
   new_array = []
+  game_hash.each do |
  end 
  
  
