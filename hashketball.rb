@@ -1,3 +1,5 @@
+require 'pry'
+
 def game_hash
   {
     :home => {
@@ -125,6 +127,7 @@ def get_all_players(game_hash)
 end 
   
 def find_player(players, player_name)
+  binding.pry 
   players.each do |player|
     if player[:player_name] == player_name
         return player 
