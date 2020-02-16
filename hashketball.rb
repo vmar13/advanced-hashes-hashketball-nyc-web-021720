@@ -184,7 +184,7 @@ def player_stats(player_name)
                            blocks: player_stat[:blocks],
                            slam_dunks: player_stat[:slam_dunks]
                          }
-        return new_hash
+                         return new_hash
       end 
     end 
   end 
