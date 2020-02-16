@@ -172,7 +172,23 @@ end
   end 
  
 def player_stats(player_name)
-  
+  game_hash.each do |location, team_data|
+    team_data[:players].each do |player_stat|
+      if player_stat[:player_name] == player_name
+        stats_by_name = { number:  player_stat[:number],
+                           shoe: player_stat[:shoe],
+                           points: player_stat[:points],
+                           rebounds: player_stat[:rebounds],
+                           assists: player_stat[:assists],
+                           steals: player_stat[:steals],
+                           blocks: player_stat[:blocks],
+                           slam_dunks: player_stat[:slam_dunks]
+                         }
+        return new_hash
+      end 
+    end 
+  end 
+end
   
   
   
