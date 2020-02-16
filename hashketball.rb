@@ -163,10 +163,10 @@ def player_numbers(team_name)
         value.each do |player_data|
           new_array << player_data[:number]
         end
-        new_array
       end
     end
   end
+  new_array
 end 
  
  
