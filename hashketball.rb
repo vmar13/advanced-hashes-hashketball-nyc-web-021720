@@ -124,12 +124,10 @@ def get_all_players(game_hash)
   end.flatten
 end 
   
-def find_player(game_hash, player_name)
-  game_hash.each do |team, data|
-    data[:players].each do |player|
-      if player[:player_name] == player_name
+def find_player(players, player_name)
+  players.each do |data|
+    if player[:player_name] == player_name
         return player 
-      end 
     end
   end 
 end 
