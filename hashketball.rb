@@ -126,7 +126,7 @@ end
   
 def find_player(game_hash, player_name)
   game_hash.find do |team, data|
-    data{;players].each do |player|
+    data[:players].each do |player|
     player[:player_name] == player_name
     end
   end 
