@@ -115,18 +115,21 @@ require 'pry'
 }
 end
 
-def find_player(player_name)
-  home_players = game_hash[:home][:players]
-  away_players = game_hash[:away][:players]
+# def find_player(player_name)
+#   home_players = game_hash[:home][:players]
+#   away_players = game_hash[:away][:players]
   
-  all_players = home_players.merge(away_players) 
+#   all_players = home_players.merge(away_players) 
   
-  all_players[player_name]
+#   all_players[player_name]
+# end
+
+def num_points_scored(player_name)
+  players = get_all_players
+  find_player(players, player_name)[:points]
 end
 
-def num_points_scored
-  find_player(player_name)[:points]
-end
+
 
 #   game_hash.each do |location, team_data|
 #     team_data.each do |attribute, data|
