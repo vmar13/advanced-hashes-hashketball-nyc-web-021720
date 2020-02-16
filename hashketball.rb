@@ -127,14 +127,13 @@ def get_all_players(game_hash)
   end.flatten
 end 
   
-def find_player(player_name)
-  home_players = game_hash[:home][:players]
-  away_players = game_hash[:away][:players]
-  
-  all_players = home_players.merge(away_players)
-  
-  all_players[player_name]
+def find_player(players, player_name)
+  players.find do |player|
+    player[:player_name] == player_name
+  end 
 end 
+  
+
 
 
 
