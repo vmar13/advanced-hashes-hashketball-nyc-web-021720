@@ -250,7 +250,7 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton?
-  most_steals = 22
+  most_steals = 0
   player_with_most_steals = "Bismack Biyombo"
   game_hash.each do |location, team|
     team.each do |attribute, data|
