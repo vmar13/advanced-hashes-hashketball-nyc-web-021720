@@ -117,7 +117,6 @@ end
 
 def num_points_scored(player_name)
   players = get_all_players(game_hash)
-  # binding.pry
   find_player(players, player_name)[:points]
 end 
 
@@ -136,6 +135,8 @@ def find_player(players, player_name)
 end 
   
 def shoe_size(player_name)
+   players = get_all_players(game_hash)
+  find_player(players, player_name)[:shoe_size]
 end   
   
 def team_colors(team_name)
