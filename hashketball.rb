@@ -138,7 +138,6 @@ game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if attribute == :players
       data.each do |player|
-        binding.pry 
         if player[:player_name] == player_name
           return player[:points]
         end
