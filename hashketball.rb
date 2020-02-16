@@ -124,7 +124,8 @@ end
 def get_all_players(game_hash)
   players = game_hash.values.map do |item|
     team[:players]
-  end 
+  end
+end 
   
 def find_player(player_name)
   home_players = game_hash[:home][:players]
