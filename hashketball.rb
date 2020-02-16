@@ -116,7 +116,8 @@ require 'pry'
 end
 
 def num_points_scored(player_name)
-  find_player(player_name)[:points]
+  players = get_all_players
+  find_player(players, player_name)[:points]
 end
 
 
